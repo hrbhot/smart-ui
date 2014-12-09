@@ -1,0 +1,1206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0045)http://www.discuz.net/thread-3579915-1-1.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
+
+<title>Discuz! 7.x 高危安全漏洞，请及时修复【20140702】 - Discuz! 程序发布 -  Discuz! 官方站 -  Powered by Discuz!</title>
+<meta name="google-site-verification" content="U3IJBAJQT_XhCFOcWGRftYM-rfn3UEihbhMe8rUxdcE">
+<link href="./post-detail_files/post-detail.html" rel="canonical">
+<meta name="keywords" content="Discuz! 7.x 高危安全漏洞，请及时修复【20140702】">
+<meta name="description" content=" Discuz! 7.x 高危安全漏洞，请及时修复【20140702】 ,Discuz! 官方站">
+<meta name="generator" content="Discuz! X3.2">
+<meta name="author" content="Discuz! Team and Comsenz UI Team">
+<meta name="copyright" content="2001-2013 Comsenz Inc.">
+<meta name="MSSmartTagsPreventParsing" content="True">
+<meta http-equiv="MSThemeCompatible" content="Yes">
+<!--<base href="http://www.discuz.net/">--><base href="."><link rel="stylesheet" type="text/css" href="./post-detail_files/style_1_common.css"><link rel="stylesheet" type="text/css" href="./post-detail_files/style_1_forum_viewthread.css"><script type="text/javascript" charset="utf-8" src="./post-detail_files/MTAwMA==.js"></script><script type="text/javascript">var STYLEID = '1', STATICURL = 'static/', IMGDIR = 'static/image/common', VERHASH = 'hbY', charset = 'gbk', discuz_uid = '2318607', cookiepre = 't7asq_4ad6_', cookiedomain = '.discuz.net', cookiepath = '/', showusercard = '1', attackevasive = '0', disallowfloat = 'newthread|tradeorder|activity|debate', creditnotice = '1|威望|,2|金币|个,4|贡献|点,5|体力|,6|激情|', defaultstyle = '', REPORTURL = 'aHR0cDovL3d3dy5kaXNjdXoubmV0L3RocmVhZC0zNTc5OTE1LTEtMS5odG1s', SITEURL = 'http://www.discuz.net/', JSPATH = 'static/js/', CSSPATH = 'data/cache/style_', DYNAMICURL = '';</script>
+<script src="./post-detail_files/common.js" type="text/javascript"></script>
+<meta name="application-name" content="Discuz! 官方站">
+<meta name="msapplication-tooltip" content="Discuz! 官方站">
+<meta name="msapplication-task" content="name=论坛首页;action-uri=http://www.discuz.net/forum.php;icon-uri=http://www.discuz.net/static/image/common/bbs.ico">
+<link rel="archives" title="Discuz! 官方站" href="http://www.discuz.net/archiver/">
+<script src="./post-detail_files/forum.js" type="text/javascript"></script>
+<script type="text/javascript" src="./post-detail_files/hu"></script><script type="text/javascript" id="jljdhYYFOYYKIIKJUanPNWXFOODXuQJZ" charset="GBK" src="./post-detail_files/common_extra.js"></script></head>
+
+<body id="nv_forum" class="pg_viewthread" onkeydown="if(event.keyCode==27) return false;"><a style="width: 92px; height: 22px; position: absolute; display: none; background: url(http://open.t.qq.com/apps/qshare/images/icon.gif) no-repeat rgb(255, 0, 0);" href="javascript:;"></a>
+<div id="append_parent"><div id="rate_28022906_1886183_menu" class="tip tip_4" initialized="true" style="position: absolute; z-index: 501; left: 572.5px; top: 1610px; display: none;"><div class="tip_horn"></div><div class="tip_c"><strong>神马都是浮云</strong>&nbsp;<em class="xi1">金币 + 1 个</em>
+</div></div></div><div id="ajaxwaitid"></div>
+<div id="toptb" class="cl">
+<div class="wp">
+<div class="z"><a href="javascript:;" onclick="setHomepage(&#39;http://www.discuz.net/&#39;);">设为首页</a><a href="http://www.discuz.net/" onclick="addFavorite(this.href, &#39;Discuz! 官方站&#39;);return false;">收藏本站</a><script type="text/javascript">var _speedMark = new Date();</script></div>
+<div class="y">
+<a id="switchblind" href="javascript:;" onclick="toggleBlind(this)" title="开启辅助访问" class="switchblind">开启辅助访问</a>
+<a href="javascript:;" id="switchwidth" onclick="widthauto(this)" title="切换到宽版" class="switchwidth">切换到宽版</a>
+<a id="sslct" href="javascript:;" onmouseover="delayShow(this, function() {showMenu({&#39;ctrlid&#39;:&#39;sslct&#39;,&#39;pos&#39;:&#39;34!&#39;})});">切换风格</a></div>
+</div>
+</div>
+
+<ul id="myprompt_menu" class="p_pop" style="display: none;">
+<li><a href="http://www.discuz.net/home.php?mod=space&do=pm" id="pm_ntc" style="background-repeat: no-repeat; background-position: 0 50%;"><em class="prompt_news_0"></em>消息</a></li>
+<li><a href="http://www.discuz.net/home.php?mod=follow&do=follower"><em class="prompt_follower_0"></em>新听众</a></li>
+<li class="ignore_noticeli"><a href="javascript:;" onclick="setcookie(&#39;ignore_notice&#39;, 1);hideMenu(&#39;myprompt_menu&#39;)" title="暂不提醒"><em class="ignore_notice"></em></a></li>
+</ul>
+<div id="sslct_menu" class="cl p_pop" style="display: none;">
+<span class="sslct_btn" onclick="extstyle(&#39;&#39;)" title="默认"><i></i></span><span class="sslct_btn" onclick="extstyle(&#39;./template/default/style/t1&#39;)" title="红"><i style="background:#BA350F"></i></span>
+<span class="sslct_btn" onclick="extstyle(&#39;./template/default/style/t3&#39;)" title="橙"><i style="background:#FE9500"></i></span>
+<span class="sslct_btn" onclick="extstyle(&#39;./template/default/style/t5&#39;)" title="蓝"><i style="background:#0053B9"></i></span>
+<span class="sslct_btn" onclick="extstyle(&#39;./template/default/style/t2&#39;)" title="青"><i style="background:#429296"></i></span>
+<span class="sslct_btn" onclick="extstyle(&#39;./template/default/style/t4&#39;)" title="紫"><i style="background:#9934B7"></i></span>
+</div>
+<ul id="myitem_menu" class="p_pop" style="display: none;">
+<li><a href="http://www.discuz.net/forum.php?mod=guide&view=my">帖子</a></li>
+<li><a href="http://www.discuz.net/home.php?mod=space&do=favorite&view=me">收藏</a></li>
+<li><a href="http://www.discuz.net/home.php?mod=space&do=friend">好友</a></li>
+</ul>
+<div id="qmenu_menu" class="p_pop " style="display: none;">
+<ul class="cl nav"><li><a href="http://www.discuz.net/forum.php?mod=guide&view=my" style="background-image:url(http://www.discuz.net/static/image/feed/thread_b.png) !important">帖子</a></li>
+<li><a href="http://www.discuz.net/home.php?mod=space&do=friend" style="background-image:url(http://www.discuz.net/static/image/feed/friend_b.png) !important">好友</a></li>
+<li><a href="http://www.discuz.net/home.php?mod=magic" style="background-image:url(http://www.discuz.net/static/image/feed/magic_b.png) !important">道具</a></li>
+<li><a href="http://www.discuz.net/home.php?mod=space&do=favorite&view=me" style="background-image:url(http://www.discuz.net/static/image/feed/favorite_b.png) !important">收藏</a></li>
+<li><a href="http://www.discuz.net/home.php?mod=task" style="background-image:url(http://www.discuz.net/static/image/feed/task_b.png) !important">任务</a></li>
+<li><a href="http://www.discuz.net/forum.php?mod=collection&op=my" style="background-image:url(http://www.discuz.net/static/image/feed/collection_b.png) !important">淘帖</a></li>
+</ul>
+<div id="fjump_menu" class="btda"></div></div><div class="wp a_h"><a href="http://www.discuz.net/thread-3617156-1-1.html" target="_blank"><img src="./post-detail_files/175100rzb6di71mti1mapp.jpg" border="0"></a></div><div id="hd">
+<div class="wp">
+<div class="hdc cl"><h2><a href="http://www.discuz.net/" title="Discuz! 官方站"><img src="./post-detail_files/logo.png" alt="Discuz! 官方站" border="0"></a></h2><div id="um">
+<div class="avt y"><a href="http://www.discuz.net/home.php?mod=space&uid=2318607"><img src="./post-detail_files/noavatar_small.gif" onerror="this.onerror=null;this.src=&#39;http://uc.discuz.net/images/noavatar_small.gif&#39;"></a></div>
+<p>
+<strong class="vwmy qq"><a href="http://www.discuz.net/home.php?mod=space&uid=2318607" target="_blank" title="访问我的空间">hubcarl520</a></strong>
+
+<span class="pipe">|</span><a href="javascript:;" onclick="showWindow(&#39;wechat_bind&#39;, &#39;plugin.php?id=wechat:bind&#39;)"><img src="./post-detail_files/wechat_bind.png" class="qq_bind" align="absmiddle"></a>
+<span class="pipe">|</span><a href="javascript:;" id="myitem" class="showmenu" onmouseover="showMenu({&#39;ctrlid&#39;:&#39;myitem&#39;});">我的</a>
+<span class="pipe">|</span><a href="http://www.discuz.net/home.php?mod=spacecp">设置</a>
+<span class="pipe">|</span><a href="http://www.discuz.net/home.php?mod=space&do=pm" id="pm_ntc">消息</a>
+<span class="pipe">|</span><a href="http://www.discuz.net/home.php?mod=space&do=notice" id="myprompt" class="a showmenu" onmouseover="showMenu({&#39;ctrlid&#39;:&#39;myprompt&#39;});">提醒</a><span id="myprompt_check"></span>
+<span class="pipe">|</span><a href="http://www.discuz.net/member.php?mod=logging&action=logout&formhash=2737d5aa">退出</a>
+</p>
+<p>
+<a href="http://www.discuz.net/home.php?mod=spacecp&ac=credit&showcredit=1" id="extcreditmenu" onmouseover="delayShow(this, showCreditmenu);" class="showmenu">积分: 3</a>
+<span class="pipe">|</span><a href="http://www.discuz.net/home.php?mod=spacecp&ac=usergroup" id="g_upmine" class="showmenu" onmouseover="delayShow(this, showUpgradeinfo)">用户组: Newbie</a>
+</p>
+</div>
+</div>
+
+<div id="nv" style="top: 0px; left: 231.5px; z-index: 199; border-left-width: 0px; border-right-width: 0px; height: 33px; width: 960px; position: fixed; opacity: 0.85;">
+<a href="javascript:;" id="qmenu" onmouseover="delayShow(this, function () {showMenu({&#39;ctrlid&#39;:&#39;qmenu&#39;,&#39;pos&#39;:&#39;34!&#39;,&#39;ctrlclass&#39;:&#39;a&#39;,&#39;duration&#39;:2});showForummenu(10);})">快捷导航</a>
+<ul><li class="a" id="mn_forum"><a href="http://www.discuz.net/forum.php" hidefocus="true" title="BBS">论坛首页<span>BBS</span></a></li><li id="mn_N6495" onmouseover="showMenu({&#39;ctrlid&#39;:this.id,&#39;ctrlclass&#39;:&#39;hover&#39;,&#39;duration&#39;:2})"><a href="http://faq.comsenz.com/library/?from=discuzheader" hidefocus="true" target="_blank" style="font-weight: bold;color: orange">文档资料</a></li><li id="mn_userapp" onmouseover="delayShow(this, function () {showMenu({&#39;ctrlid&#39;:&#39;mn_userapp&#39;,&#39;pos&#39;:&#39;43!&#39;,&#39;ctrlclass&#39;:&#39;a&#39;,&#39;duration&#39;:2});showUserApp();})"><a href="http://www.discuz.net/userapp.php" hidefocus="true" title="Manyou">应用游戏<span>Manyou</span><b class="icon_down"></b></a></li><li id="mn_N3afe"><a href="http://www.verydz.com/cloud.php" hidefocus="true" target="_blank" style="font-weight: bold;">腾讯云主机</a></li><li id="mn_N7d06"><a href="http://www.comsenz.com/purchase/discuzx/" hidefocus="true" target="_blank" style="font-weight: bold;">服务购买</a></li><li id="mn_N0726" onmouseover="showMenu({&#39;ctrlid&#39;:this.id,&#39;ctrlclass&#39;:&#39;hover&#39;,&#39;duration&#39;:2})"><a href="http://www.discuz.net/#" hidefocus="true" target="_blank" style="color: red">微社区</a></li><li id="mn_Nf737"><a href="http://addon.discuz.com/" hidefocus="true" target="_blank">应用中心</a></li></ul>
+</div>
+<ul class="p_pop h_pop" id="mn_N6495_menu" style="display: none"><li><a href="http://www.discuz.net/portal.php?mod=list&catid=8" hidefocus="true">教程</a></li><li><a href="http://px.discuz.net/" hidefocus="true">精品课程</a></li><li><a href="http://faq.comsenz.com/library/?from=discuzheader" hidefocus="true">资料库</a></li></ul><div class="p_pop h_pop" id="mn_userapp_menu" style="display: none"></div><ul class="p_pop h_pop" id="mn_N0726_menu" style="display: none"><li><a href="http://www.discuz.net/thread-3570430-1-1.html" hidefocus="true">DZ打通版本</a></li><li><a href="http://wsq.qq.com/?fromdiscuznet" hidefocus="true">普通版本</a></li></ul><div id="mu" class="cl">
+</div><div class="a_mu"><div id="dzf" class="cl" style="text-align:left;">
+<style type="text/css">
+.pg_index #pt .y { height: 28px; overflow: hidden; }
+.mlt li .cl { height: 18px; overflow: hidden; }
+.mlt li .c { height: auto!important; }
+#pp {zoom:1;}
+#dzf{margin-bottom: -1px;padding:10px 0;border: solid #CDCDCD;border-width: 0 0 1px;background: #F5F7F9;line-height:160%}
+#dzf p{width:33%;text-indent:70px;background:url(http://att.discuz.net/data/attachment/album/201005/14/0953351hcnq10n6w4zqnwh.png) no-repeat 10px 2px}
+.dzfbl{border-left:1px solid #FFF}
+.dzfbr{border-right:1px solid #DDD}
+#dzf em{display:block;color:#D3DFDF}
+#dzf .xg2{color:#666}
+#dzf em a{color:#369}
+#scbar td { padding: 0 !important; }
+</style>
+<p class="z dzfbr" style="background: url(http://att.discuz.net/data/attachment/album/201007/08/18064039kg9m5weze9ardr.gif) no-repeat 15px 6px;">
+	<a href="http://www.discuz.net/forum.php?mod=forumdisplay&fid=22&filter=typeid&typeid=493" class="xw1" target="_blank">Discuz! X 最新研发动态</a>
+	<em class="xg2">通过这个窗口，关注跟踪我们的研发进展</em>
+	<em><a href="http://open.discuz.net/?ac=document&page=dev" target="_blank">Discuz! 开发技术文库</a> - <a href="http://www.discuz.net/forum-22-1.html" target="_blank">给官方提建议</a></em>
+</p>
+<p class="z dzfbr dzfbl" style="background-position:10px -85px">
+	<a href="http://www.discuz.net/thread-3570835-1-1.html" target="_blank" class="xw1">Discuz！跨时代产品X3.2发布</a>
+	<em class="xg2">支持微信登陆，打通微社区数据</em>
+	<em><a href="http://www.discuz.net/thread-3570835-1-1.html" target="_blank">下载安装</a> - <a href="http://www.discuz.net/thread-3570430-1-1.html" target="_blank"><b>开通微社区流程</b></a> - <a href="http://www.discuz.net/thread-3520114-1-1.html" target="_blank">常见问题</a></em>
+</p>
+<p class="z dzfbl" style="text-indent:15px;background:none">
+	<em><a href="http://wsq.qq.com/" target="_blank"><b>微社区，敲开移动社区之门</b></a> - <a href="http://train.phpchina.com/p/37/?fromdiscuznet" target="_blank">Discuz!金牌课程</a>
+	<em><a href="http://zz.comsenz.com/" style="color:red; " target="_blank">2014创业者大会盛大开启，快来报名吧！</a></em>
+	<em><a href="http://www.qcloud.com/fuchi2014.php?from=discuznet" target="_blank">腾讯云亿元生态扶植</a>- <a href="http://www.verydz.com/cloud.php" target="_blank">包含服务的腾讯云主机</a></em>
+</em></p><em>
+</em></div></div><div id="scbar" class="scbar_narrow cl"><em>
+<form id="scbar_form" method="get" autocomplete="off" onsubmit="searchFocus($(&#39;scbar_txt&#39;))" action="http://search.discuz.net/f/discuz" target="_blank">
+<input type="hidden" name="mod" id="scbar_mod" value="forum">
+<input type="hidden" name="formhash" value="2737d5aa">
+<input type="hidden" name="srchtype" value="title">
+<input type="hidden" name="srhfid" value="10">
+<input type="hidden" name="srhlocality" value="forum::viewthread">
+<input type="hidden" name="sId" value="1000">
+<input type="hidden" name="ts" value="1417617952">
+<input type="hidden" name="cuId" value="2318607">
+<input type="hidden" name="cuName" value="hubcarl520">
+<input type="hidden" name="gId" value="17">
+<input type="hidden" name="agId" value="0">
+<input type="hidden" name="egIds" value="">
+<input type="hidden" name="fmSign" value="">
+<input type="hidden" name="ugSign17" value="">
+<input type="hidden" name="ext_vgIds" value="0">
+<input type="hidden" name="sign" value="5e8f8a946bf2861a1a9b13710b57b742">
+<input type="hidden" name="charset" value="gbk">
+<input type="hidden" name="source" value="discuz">
+<input type="hidden" name="fId" id="srchFId" value="0">
+<input type="hidden" name="q" id="cloudsearchquery" value="">
+
+<style>
+#scbar { overflow: visible; position: relative; }
+#sg{ background: #FFF; width:456px; border: 1px solid #B2C7DA; }
+.scbar_narrow #sg { width: 316px; }
+#sg li { padding:0 8px; line-height:30px; font-size:14px; }
+#sg li span { color:#999; }
+.sml { background:#FFF; cursor:default; }
+.smo { background:#E5EDF2; cursor:default; }
+            </style>
+            <div style="display: none; position: absolute; top:37px; left:44px;" id="sg">
+                <div id="st_box" cellpadding="2" cellspacing="0"></div>
+            </div>
+<table cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="scbar_icon_td"></td>
+<td class="scbar_txt_td"><input type="text" name="srchtxt" id="scbar_txt" value="请输入搜索内容" autocomplete="off" x-webkit-speech="" speech="" class=" xg1" placeholder="请输入搜索内容"></td>
+<td class="scbar_type_td"><a href="javascript:;" id="scbar_type" class="xg1" onclick="showMenu(this.id)" hidefocus="true">帖子</a></td>
+<td class="scbar_btn_td"><button type="submit" name="searchsubmit" id="scbar_btn" sc="1" class="pn pnc" value="true" mid="lVUTkRUmgWWWWWWWWWWWWWWWWWWWWWWW"><strong class="xi2">搜索</strong></button></td>
+<td class="scbar_hot_td">
+<div id="scbar_hot">
+<strong class="xw1">热搜: </strong>
+
+<a href="http://search.discuz.net/f/discuz?q=%CD%F8%D2%B3%D3%CE%CF%B7&source=hotsearch&sId=1000&ts=1417617952&cuId=2318607&cuName=hubcarl520&gId=17&agId=0&egIds=&fmSign=&ugSign17=&ext_vgIds=0&sign=5e8f8a946bf2861a1a9b13710b57b742&charset=gbk" target="_blank" class="xi2" sc="1" mid="FLJgxobyrmPNcsutwvlqmPmovXxYYMva">网页游戏</a>
+
+
+
+<a href="http://search.discuz.net/f/discuz?q=%BB%E9%C9%B4&source=hotsearch&sId=1000&ts=1417617952&cuId=2318607&cuName=hubcarl520&gId=17&agId=0&egIds=&fmSign=&ugSign17=&ext_vgIds=0&sign=5e8f8a946bf2861a1a9b13710b57b742&charset=gbk" target="_blank" class="xi2" sc="1" mid="xPCNmkpoudWOsSjNRBGmevcSaZklsraO">婚纱</a>
+
+
+
+<a href="http://search.discuz.net/f/discuz?q=%CD%C6%B9%E3&source=hotsearch&sId=1000&ts=1417617952&cuId=2318607&cuName=hubcarl520&gId=17&agId=0&egIds=&fmSign=&ugSign17=&ext_vgIds=0&sign=5e8f8a946bf2861a1a9b13710b57b742&charset=gbk" target="_blank" class="xi2" sc="1" mid="xPCNmHLowKWRsSQoRBGmevcSaZklsraO">推广</a>
+
+
+
+<a href="http://search.discuz.net/f/discuz?q=%C1%C4%CC%EC%CA%D2&source=hotsearch&sId=1000&ts=1417617952&cuId=2318607&cuName=hubcarl520&gId=17&agId=0&egIds=&fmSign=&ugSign17=&ext_vgIds=0&sign=5e8f8a946bf2861a1a9b13710b57b742&charset=gbk" target="_blank" class="xi2" sc="1" mid="SfJoNqmtmOpqmmSomxqlsvUNvXowXIDJ">聊天室</a>
+
+
+
+<a href="http://search.discuz.net/f/discuz?q=%D3%CE%CF%B7&source=hotsearch&sId=1000&ts=1417617952&cuId=2318607&cuName=hubcarl520&gId=17&agId=0&egIds=&fmSign=&ugSign17=&ext_vgIds=0&sign=5e8f8a946bf2861a1a9b13710b57b742&charset=gbk" target="_blank" class="xi2" sc="1" mid="xPCNmMMowTWOpSjMRBGmevcSaZklsraO">游戏</a>
+
+
+
+<a href="http://search.discuz.net/f/discuz?q=%BB%E9%C9%B4%C9%E3%D3%B0&source=hotsearch&sId=1000&ts=1417617952&cuId=2318607&cuName=hubcarl520&gId=17&agId=0&egIds=&fmSign=&ugSign17=&ext_vgIds=0&sign=5e8f8a946bf2861a1a9b13710b57b742&charset=gbk" target="_blank" class="xi2" sc="1" mid="FLJgxbhyInPqxsuKwqLqQtmnWXxVYMva">婚纱摄影</a>
+
+
+
+<a href="http://search.discuz.net/f/discuz?q=%BB%FD%B7%D6%C9%CC%B3%C7&source=hotsearch&sId=1000&ts=1417617952&cuId=2318607&cuName=hubcarl520&gId=17&agId=0&egIds=&fmSign=&ugSign17=&ext_vgIds=0&sign=5e8f8a946bf2861a1a9b13710b57b742&charset=gbk" target="_blank" class="xi2" sc="1" mid="FLJgxbhyrmPrTsowwqLqmpmRWXMYYMva">积分商城</a>
+
+
+
+<a href="http://search.discuz.net/f/discuz?q=%B0%E1%BC%D2&source=hotsearch&sId=1000&ts=1417617952&cuId=2318607&cuName=hubcarl520&gId=17&agId=0&egIds=&fmSign=&ugSign17=&ext_vgIds=0&sign=5e8f8a946bf2861a1a9b13710b57b742&charset=gbk" target="_blank" class="xi2" sc="1" mid="xPCNmkFouRWRmSPnRBGmevcSaZklsraO">搬家</a>
+
+
+
+<a href="http://search.discuz.net/f/discuz?q=%CD%AC%B3%C7%BD%BB%D3%D1&source=hotsearch&sId=1000&ts=1417617952&cuId=2318607&cuName=hubcarl520&gId=17&agId=0&egIds=&fmSign=&ugSign17=&ext_vgIds=0&sign=5e8f8a946bf2861a1a9b13710b57b742&charset=gbk" target="_blank" class="xi2" sc="1" mid="FLJgxobyuvPrnsPNwNSqTQmnWXTYYMva">同城交友</a>
+
+
+
+<a href="http://search.discuz.net/f/discuz?q=%BF%CD%BB%A7%B6%CB&source=hotsearch&sId=1000&ts=1417617952&cuId=2318607&cuName=hubcarl520&gId=17&agId=0&egIds=&fmSign=&ugSign17=&ext_vgIds=0&sign=5e8f8a946bf2861a1a9b13710b57b742&charset=gbk" target="_blank" class="xi2" sc="1" mid="SfJoNrvtmkpNLmmomUplnTUNvXowXIDJ">客户端</a>
+
+
+
+<a href="http://search.discuz.net/f/discuz?q=%C2%C3%D3%CE&source=hotsearch&sId=1000&ts=1417617952&cuId=2318607&cuName=hubcarl520&gId=17&agId=0&egIds=&fmSign=&ugSign17=&ext_vgIds=0&sign=5e8f8a946bf2861a1a9b13710b57b742&charset=gbk" target="_blank" class="xi2" sc="1" mid="xPCNmHRowPWHySOORBGmevcSaZklsraO">旅游</a>
+
+
+
+<a href="http://search.discuz.net/f/discuz?q=%D5%D0%C6%B8&source=hotsearch&sId=1000&ts=1417617952&cuId=2318607&cuName=hubcarl520&gId=17&agId=0&egIds=&fmSign=&ugSign17=&ext_vgIds=0&sign=5e8f8a946bf2861a1a9b13710b57b742&charset=gbk" target="_blank" class="xi2" sc="1" mid="xPCNmMIoxYWOlSjRRBGmevcSaZklsraO">招聘</a>
+
+
+
+<a href="http://search.discuz.net/f/discuz?q=%B9%FA%BC%CA%C9%CC%B3%C7&source=hotsearch&sId=1000&ts=1417617952&cuId=2318607&cuName=hubcarl520&gId=17&agId=0&egIds=&fmSign=&ugSign17=&ext_vgIds=0&sign=5e8f8a946bf2861a1a9b13710b57b742&charset=gbk" target="_blank" class="xi2" sc="1" mid="FLJgxbayrPPrTsPHwqLqmpmRWXMYYMva">国际商城</a>
+
+
+
+<a href="http://search.discuz.net/f/discuz?q=%D5%F7%BB%E9%BD%BB%D3%D1&source=hotsearch&sId=1000&ts=1417617952&cuId=2318607&cuName=hubcarl520&gId=17&agId=0&egIds=&fmSign=&ugSign17=&ext_vgIds=0&sign=5e8f8a946bf2861a1a9b13710b57b742&charset=gbk" target="_blank" class="xi2" sc="1" mid="FLJgxlkyrPPrQsnvwNSqTQmnWXTYYMva">征婚交友</a>
+
+
+
+<a href="http://search.discuz.net/f/discuz?q=%CA%D6%BB%FA&source=hotsearch&sId=1000&ts=1417617952&cuId=2318607&cuName=hubcarl520&gId=17&agId=0&egIds=&fmSign=&ugSign17=&ext_vgIds=0&sign=5e8f8a946bf2861a1a9b13710b57b742&charset=gbk" target="_blank" class="xi2" sc="1" mid="xPCNmHsoxKWRlSJKRBGmevcSaZklsraO">手机</a>
+
+
+
+<a href="http://search.discuz.net/f/discuz?q=%D6%A3%D6%DD%BB%E9%C9%B4%C9%E3%D3%B0&source=hotsearch&sId=1000&ts=1417617952&cuId=2318607&cuName=hubcarl520&gId=17&agId=0&egIds=&fmSign=&ugSign17=&ext_vgIds=0&sign=5e8f8a946bf2861a1a9b13710b57b742&charset=gbk" target="_blank" class="xi2" sc="1" mid="GSKCiCJPvvfmbBKsMbbbvoQbGwPHsUxn">郑州婚纱摄影</a>
+
+
+
+<a href="http://search.discuz.net/f/discuz?q=Discuz%21&source=hotsearch&sId=1000&ts=1417617952&cuId=2318607&cuName=hubcarl520&gId=17&agId=0&egIds=&fmSign=&ugSign17=&ext_vgIds=0&sign=5e8f8a946bf2861a1a9b13710b57b742&charset=gbk" target="_blank" class="xi2" sc="1" mid="MoiLoKnrkWUEnAuSvFwRihgPCVPZaSpK">Discuz!</a>
+
+
+
+<a href="http://search.discuz.net/f/discuz?q=X2&source=hotsearch&sId=1000&ts=1417617952&cuId=2318607&cuName=hubcarl520&gId=17&agId=0&egIds=&fmSign=&ugSign17=&ext_vgIds=0&sign=5e8f8a946bf2861a1a9b13710b57b742&charset=gbk" target="_blank" class="xi2" sc="1" mid="lDGWrXJjUzAsTixkgCwOXZoQmEaxrRDE">X2</a>
+
+
+
+<a href="http://search.discuz.net/f/discuz?q=%BD%BB%D3%D1&source=hotsearch&sId=1000&ts=1417617952&cuId=2318607&cuName=hubcarl520&gId=17&agId=0&egIds=&fmSign=&ugSign17=&ext_vgIds=0&sign=5e8f8a946bf2861a1a9b13710b57b742&charset=gbk" target="_blank" class="xi2" sc="1" mid="xPCNmkLoTsWHySPuRBGmevcSaZklsraO">交友</a>
+
+
+
+<a href="http://search.discuz.net/f/discuz?q=%B7%D6%C0%E0%D0%C5%CF%A2&source=hotsearch&sId=1000&ts=1417617952&cuId=2318607&cuName=hubcarl520&gId=17&agId=0&egIds=&fmSign=&ugSign17=&ext_vgIds=0&sign=5e8f8a946bf2861a1a9b13710b57b742&charset=gbk" target="_blank" class="xi2" sc="1" mid="FLJgxbgyJkPqosnqwvSqmnmovXmpYMva">分类信息</a>
+
+
+
+<a href="http://search.discuz.net/f/discuz?q=%B6%FE%BC%B6%B5%BC%BA%BD&source=hotsearch&sId=1000&ts=1417617952&cuId=2318607&cuName=hubcarl520&gId=17&agId=0&egIds=&fmSign=&ugSign17=&ext_vgIds=0&sign=5e8f8a946bf2861a1a9b13710b57b742&charset=gbk" target="_blank" class="xi2" sc="1" mid="FLJgxbbyrLPrTsuwwNbqTpmROXxRYMva">二级导航</a>
+
+</div>
+</td>
+</tr>
+</tbody></table>
+</form>
+</em></div><em>
+<ul id="scbar_type_menu" class="p_pop" style="display: none;"><li><a href="javascript:;" rel="curforum" fid="10">本版</a></li><li><a href="javascript:;" rel="forum" class="curtype">帖子</a></li><li><a href="javascript:;" rel="album">相册</a></li><li><a href="javascript:;" rel="user">用户</a></li></ul>
+<script type="text/javascript">
+initSearchmenu('scbar', 'http://search.discuz.net/f/discuz');
+</script>
+</em></div><em>
+</em></div><em>
+
+<link rel="stylesheet" type="text/css" href="./post-detail_files/issuetrack.css">
+<div id="wp" class="wp">
+<script type="text/javascript">var fid = parseInt('10'), tid = parseInt('3579915');</script>
+
+<script src="./post-detail_files/forum_viewthread.js" type="text/javascript"></script>
+<script type="text/javascript">zoomstatus = parseInt(1);var imagemaxwidth = '595';var aimgcount = new Array();</script>
+
+<style id="diy_style" type="text/css"></style>
+<!--[diy=diynavtop]--><div id="diynavtop" class="area"></div><!--[/diy]-->
+<div id="pt" class="bm cl">
+<div class="z">
+<a href="http://www.discuz.net/" class="nvhm" title="首页">Discuz! 官方站</a><em>&#187;</em><a href="http://www.discuz.net/forum.php">论坛首页</a> <em>&#8250;</em> <a href="http://www.discuz.net/forum.php?gid=30">Comsenz 公司动态</a> <em>&#8250;</em> <a href="http://www.discuz.net/forum-10-1.html">Discuz! 程序发布</a> <em>&#8250;</em> <a href="./post-detail_files/post-detail.html">Discuz! 7.x 高危安全漏洞，请及时修复【20140702】</a>
+</div>
+</div>
+
+<style id="diy_style" type="text/css"></style>
+<div class="wp">
+<!--[diy=diy1]--><div id="diy1" class="area"></div><!--[/diy]-->
+</div>
+
+<div id="ct" class="wp cl">
+<div id="pgt" class="pgs mbm cl ">
+<div class="pgt"></div>
+<span class="y pgb"><a href="http://www.discuz.net/forum-10-1.html">返回列表</a></span>
+<a id="newspecial" onmouseover="$(&#39;newspecial&#39;).id = &#39;newspecialtmp&#39;;this.id = &#39;newspecial&#39;;showMenu({&#39;ctrlid&#39;:this.id})" onclick="showWindow(&#39;newthread&#39;, &#39;forum.php?mod=post&amp;action=newthread&amp;fid=10&#39;)" href="javascript:;" title="发新帖"><img src="./post-detail_files/pn_post.png" alt="发新帖"></a></div>
+
+
+
+<div id="postlist" class="pl bm">
+<table cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="pls ptn pbn">
+<div class="hm ptn">
+<span class="xg1">查看:</span> <span class="xi1">92976</span><span class="pipe">|</span><span class="xg1">回复:</span> <span class="xi1">2</span>
+</div>
+</td>
+<td class="plc ptm pbn vwthd">
+<div class="y">
+<a href="http://www.discuz.net/forum.php?mod=viewthread&action=printable&tid=3579915" title="打印" target="_blank"><img src="./post-detail_files/print.png" alt="打印" class="vm"></a>
+<a href="http://www.discuz.net/forum.php?mod=redirect&goto=nextoldset&tid=3579915" title="上一主题"><img src="./post-detail_files/thread-prev.png" alt="上一主题" class="vm"></a>
+<a href="http://www.discuz.net/forum.php?mod=redirect&goto=nextnewset&tid=3579915" title="下一主题"><img src="./post-detail_files/thread-next.png" alt="下一主题" class="vm"></a>
+</div>
+<h1 class="ts">
+<a href="http://www.discuz.net/forum.php?mod=forumdisplay&fid=10&filter=typeid&typeid=7">[补丁]</a>
+<span id="thread_subject">Discuz! 7.x 高危安全漏洞，请及时修复【20140702】</span>
+</h1>
+<span class="xg1">
+<a href="./post-detail_files/post-detail.html" onclick="return copyThreadUrl(this, &#39;Discuz! 官方站&#39;)">[复制链接]</a>
+</span>
+</td>
+</tr>
+</tbody></table>
+
+
+<table cellspacing="0" cellpadding="0" class="ad">
+<tbody><tr>
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</tbody></table><div id="post_28022906"><table id="pid28022906" class="plhin" summary="pid28022906" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="pls" rowspan="2">
+<div id="favatar28022906" class="pls favatar" style="top: -227px;">
+ <div class="pi">
+<div class="authi"><a href="http://www.discuz.net/home.php?mod=space&uid=859" target="_blank" class="xw1" style="color: #ff0000">Cnteacher</a>
+</div>
+</div>
+<div class="p_pop blk bui card_gender_1" id="userinfo28022906" style="display: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo28022906_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="http://www.discuz.net/home.php?mod=space&uid=859" target="_blank" class="xi2" style="color: #ff0000">Cnteacher</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="http://www.discuz.net/home.php?mod=space&uid=859&do=profile" target="_blank" class="xi2">148222</a></dd>
+</dl><div class="imicn">
+<a href="http://www.ccphp.com/" target="_blank" title="查看个人网站"><img src="./post-detail_files/forumlink.gif" alt="查看个人网站"></a><a href="http://www.discuz.net/home.php?mod=space&uid=859&do=profile" target="_blank" title="查看详细资料"><img src="./post-detail_files/userinfo.gif" alt="查看详细资料"></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar" onmouseover="showauthor(this, &#39;userinfo28022906&#39;)"><a href="http://www.discuz.net/home.php?mod=space&uid=859" class="avtm" target="_blank"><img src="./post-detail_files/59_avatar_middle.jpg" onerror="this.onerror=null;this.src=&#39;http://uc.discuz.net/images/noavatar_middle.gif&#39;"></a></div>
+</div>
+<div class="tns xg2"><table cellspacing="0" cellpadding="0"><tbody><tr><th><p><a href="http://www.discuz.net/home.php?mod=space&uid=859&do=thread&type=thread&view=me&from=space" class="xi2">40</a></p>主题</th><th><p><a href="http://www.discuz.net/home.php?mod=space&uid=859&do=thread&type=reply&view=me&from=space" class="xi2">2823</a></p>帖子</th><td><p><a href="http://www.discuz.net/home.php?mod=space&uid=859&do=profile" class="xi2"><span title="148222">14万</span></a></p>积分</td></tr></tbody></table></div>
+
+<p><em><a href="http://www.discuz.net/home.php?mod=spacecp&ac=usergroup&gid=1" target="_blank"><font color="#ff0000">Administrator</font></a></em></p>
+
+
+<p><span><img src="./post-detail_files/star_level3.gif" alt="Rank: 20"><img src="./post-detail_files/star_level3.gif" alt="Rank: 20"><img src="./post-detail_files/star_level3.gif" alt="Rank: 20"><img src="./post-detail_files/star_level3.gif" alt="Rank: 20"><img src="./post-detail_files/star_level3.gif" alt="Rank: 20"></span></p>
+
+
+
+<dl class="pil cl">
+	<dt>积分</dt><dd><a href="http://www.discuz.net/home.php?mod=space&uid=859&do=profile" target="_blank" class="xi2">148222</a></dd>
+</dl>
+
+<dl class="pil cl"></dl><ul class="xl xl2 o cl">
+<li class="addflw">
+<a href="http://www.discuz.net/home.php?mod=spacecp&ac=follow&op=add&hash=2737d5aa&fuid=859" id="followmod_859" title="收听TA" class="xi2" onclick="showWindow(&#39;followmod&#39;, this.href, &#39;get&#39;, 0);">收听TA</a>
+</li>
+<li class="pm2"><a href="http://www.discuz.net/home.php?mod=spacecp&ac=pm&op=showmsg&handlekey=showmsg_859&touid=859&pmid=0&daterange=2&pid=28022906&tid=3579915" onclick="showWindow(&#39;sendpm&#39;, this.href);" title="发消息" class="xi2">发消息</a></li>
+</ul>
+</div>
+</td>
+<td class="plc">
+<div class="pi">
+<div id="fj" class="y">
+<label class="z">电梯直达</label>
+<input type="text" class="px p_fre z" size="2" onkeyup="$(&#39;fj_btn&#39;).href=&#39;forum.php?mod=redirect&amp;ptid=3579915&amp;authorid=0&amp;postno=&#39;+this.value" onkeydown="if(event.keyCode==13) {window.location=$(&#39;fj_btn&#39;).href;return false;}" title="跳转到指定楼层">
+<a href="javascript:;" id="fj_btn" class="z" title="跳转到指定楼层"><img src="./post-detail_files/fj_btn.png" alt="跳转到指定楼层" class="vm"></a>
+</div>
+<strong>
+<a href="./post-detail_files/post-detail.html" id="postnum28022906" onclick="setCopy(this.href, &#39;帖子地址复制成功&#39;);return false;">
+<font color="red"><b>楼主</b></font></a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon28022906" src="./post-detail_files/online_admin.gif">
+<em id="authorposton28022906">发表于 2014-7-2 15:52:34</em>
+<span class="pipe">|</span>
+<a href="http://www.discuz.net/forum.php?mod=viewthread&tid=3579915&page=1&authorid=859" rel="nofollow">只看该作者</a>
+<span class="none"><img src="./post-detail_files/arw_r.gif" class="vm" alt="回帖奖励"></span>
+<span class="pipe show">|</span><a href="http://www.discuz.net/forum.php?mod=viewthread&tid=3579915&extra=page%3D1&ordertype=1" class="show">倒序浏览</a>
+<span class="pipe show">|</span><a href="javascript:;" onclick="readmode($(&#39;thread_subject&#39;).innerHTML, 28022906);" class="show">阅读模式</a>
+</div>
+</div>
+</div><div class="pct"><style type="text/css">.pcb{margin-right:0}</style><div class="pcb">
+ 
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tbody><tr><td class="t_f" id="postmessage_28022906">
+<div class="a_pr" style="margin-left:10px;width:auto"><a href="http://www.verydz.com/cloud.php?fromdz" target="_blank"><img src="./post-detail_files/103831ppopjbwmjmi7ubrt.gif" border="0"></a></div><font color="#ff0000">根据相关安全组织的报告， Discuz! 7 系列论坛程序中含有高危安全漏洞。<br>
+<br>
+为保障您的论坛数据不被破坏， 请各位站长立即进行修复或者防御，以免遭受到攻击。</font><br>
+<br>
+修复文件： faq.php<br>
+<br>
+<strong>修复方法（一）</strong><br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;此文件为显示论坛帮助用的，功能相对独立，您可以在服务器禁止该文件的访问，或者直接删除他。对论坛常规功能没有任何影响。<br>
+<br>
+<strong>修复方法（二）</strong><br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;可以使用本贴中的附件覆盖您的旧文件<br>
+<br>
+<strong>修复方法（三）</strong><br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;手工修复faq.php<br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;用编辑器打开该文件<br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;查找代码：<div class="blockcode"><div id="code_VfN"><ol><li><br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;} elseif($action == 'grouppermission') {<br>
+</li><li></li></ol></div><em onclick="copycode($(&#39;code_VfN&#39;));">复制代码</em></div><br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;在下面添加<br>
+<div class="blockcode"><div id="code_l8Z"><ol><li><br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;$gids = array();<br>
+</li><li></li></ol></div><em onclick="copycode($(&#39;code_l8Z&#39;));">复制代码</em></div><br>
+
+<br>
+==================================================================<br>
+<font style="font-size:12px"><table cellspacing="0" class="t_table" style="width:98%"><tbody><tr><td><table cellspacing="0" class="t_table" style="width:98%"><tbody><tr><td><font color="red">特别感谢 “知道创宇”、“360网站安全检测平台”、"wooyun.org" 等安全组织为本次修正提供安全建议</font></td></tr></tbody></table><br>
+<br>
+<br>
+</td></tr></tbody></table><br>
+<br>
+<br>
+<br>
+</font><br>
+</td></tr></tbody></table>
+
+<div class="modact"><a href="http://www.discuz.net/forum.php?mod=misc&action=viewthreadmod&tid=3579915" title="帖子模式" onclick="showWindow(&#39;viewthreadmod&#39;, this.href)">本主题由 Cnteacher 于 2014-7-2 15:54 设置高亮</a></div><div class="pattl">
+
+<ignore_js_op>
+<dl class="tattl">
+<dt>
+<img src="./post-detail_files/html.gif" border="0" class="vm" alt="">
+</dt>
+<dd>
+<p class="attnm">
+
+<a href="http://www.discuz.net/forum.php?mod=attachment&aid=MTUwODY4N3w5MTI3ZmNlYnwxNDE3NjE3OTUyfDIzMTg2MDd8MzU3OTkxNQ%3D%3D" onmouseover="showMenu({&#39;ctrlid&#39;:this.id,&#39;pos&#39;:&#39;12&#39;})" id="aid1508687" target="_blank">faq.php</a>
+
+</p><div class="tip tip_4" id="aid1508687_menu" style="display: none" disautofocus="true">
+<div class="tip_c">
+<p class="y">2014-7-2 15:51 上传</p>
+<p>点击文件名下载附件</p>
+
+</div>
+<div class="tip_horn"></div>
+</div>
+<p></p>
+<p>10.44 KB, 下载次数: 4520</p>
+<p>
+
+</p>
+
+
+</dd>
+</dl>
+</ignore_js_op>
+</div>
+
+</div>
+<div id="comment_28022906" class="cm">
+</div>
+
+<h3 class="psth xs1"><span class="icon_ring vm"></span>评分</h3>
+<dl id="ratelog_28022906" class="rate">
+<dt>
+<strong><a href="http://www.discuz.net/forum.php?mod=misc&action=viewratings&tid=3579915&pid=28022906" onclick="showWindow(&#39;viewratings&#39;, this.href)" title="已有4人评分, 查看全部评分">4</a></strong>
+<p><a href="http://www.discuz.net/forum.php?mod=misc&action=viewratings&tid=3579915&pid=28022906" onclick="showWindow(&#39;viewratings&#39;, this.href)">查看全部评分</a></p>
+</dt>
+<dd>
+<div id="post_rate_28022906"></div>
+<ul class="cl"><li>
+<p id="rate_28022906_1841438" onmouseover="showTip(this)" tip="&lt;strong&gt;运营者论坛（bbs.yunyingzhe.com）已经修复&lt;/strong&gt;&#160;&lt;em class=&#39;xi1&#39;&gt;金币 + 1 个&lt;/em&gt;
+" class="mtn mbn"><a href="http://www.discuz.net/home.php?mod=space&uid=1841438" target="_blank" class="avt"><img src="./post-detail_files/38_avatar_small.jpg" onerror="this.onerror=null;this.src=&#39;http://uc.discuz.net/images/noavatar_small.gif&#39;"></a></p>
+<p><a href="http://www.discuz.net/home.php?mod=space&uid=1841438" target="_blank">陈佳星</a></p>
+</li>
+<li>
+<p id="rate_28022906_1886183" onmouseover="showTip(this)" tip="&lt;strong&gt;神马都是浮云&lt;/strong&gt;&#160;&lt;em class=&#39;xi1&#39;&gt;金币 + 1 个&lt;/em&gt;
+" class="mtn mbn" initialized="true"><a href="http://www.discuz.net/home.php?mod=space&uid=1886183" target="_blank" class="avt"><img src="./post-detail_files/83_avatar_small.jpg" onerror="this.onerror=null;this.src=&#39;http://uc.discuz.net/images/noavatar_small.gif&#39;"></a></p>
+<p><a href="http://www.discuz.net/home.php?mod=space&uid=1886183" target="_blank">1103602522</a></p>
+</li>
+<li>
+<p id="rate_28022906_1137123" onmouseover="showTip(this)" tip="&lt;strong&gt;赞一个!&lt;/strong&gt;&#160;&lt;em class=&#39;xi1&#39;&gt;金币 + 1 个&lt;/em&gt;
+" class="mtn mbn"><a href="http://www.discuz.net/home.php?mod=space&uid=1137123" target="_blank" class="avt"><img src="./post-detail_files/23_avatar_small.jpg" onerror="this.onerror=null;this.src=&#39;http://uc.discuz.net/images/noavatar_small.gif&#39;"></a></p>
+<p><a href="http://www.discuz.net/home.php?mod=space&uid=1137123" target="_blank">rstar</a></p>
+</li>
+</ul>
+</dd>
+</dl>
+
+<div id="relate_subject"></div>
+</div>
+</div>
+
+<div class="cm">
+<h3 class="psth xs1"><span class="icon_ring vm"></span>本帖被以下淘专辑推荐:</h3>
+<ul class="mbw xl xl2 cl"><li>· <a href="http://www.discuz.net/forum.php?mod=collection&action=view&ctid=2257" title="安装使用" target="_blank" class="xi2 xw1">安装使用</a><span class="pipe">|</span><span class="xg1">主题: 148, 订阅: 4</span></li>
+</ul>
+</div>
+</td></tr>
+<tr><td class="plc plm">
+<div id="p_btn" class="mtw mbm hm cl">
+<div class="tshare cl">
+<b>分享到:&nbsp;</b>
+
+
+<a href="http://www.discuz.net/home.php?mod=spacecp&ac=plugin&id=qqconnect:spacecp&pluginop=share&sh_type=4&thread_id=3579915" id="k_share_to_qq" title="QQ好友和群" target="_blank"><i><img src="./post-detail_files/qq_share.png" alt="QQ好友和群">QQ好友和群</i></a>
+<a href="javascript:void(0);" ref="http://www.discuz.net/home.php?mod=spacecp&amp;ac=plugin&amp;id=qqconnect:spacecp&amp;pluginop=share&amp;sh_type=2&amp;thread_id=3579915" id="k_weiboshare" title="腾讯微博"><i><img src="./post-detail_files/weibo.png" alt="腾讯微博">腾讯微博</i></a>
+<a href="javascript:void(0);" ref="http://www.discuz.net/home.php?mod=spacecp&amp;ac=plugin&amp;id=qqconnect:spacecp&amp;pluginop=share&amp;sh_type=3&amp;thread_id=3579915" id="k_pengyoushare" title="QQ空间"><i><img src="./post-detail_files/qzone.gif" alt="QQ空间">QQ空间</i></a>
+<script type="text/javascript">
+var _is_oauth_user = true;
+var _is_share_token_outofdate = false;
+var _is_feed_auth = true;
+var _share_buttons = ['k_weiboshare', 'k_pengyoushare'];
+function connect_share_init() {
+for (var i = 0; i < _share_buttons.length; i++) {
+$(_share_buttons[i]).onclick = function () {
+connect_share_form(this);
+return false;
+}
+}
+}
+function connect_share_form(obj) {
+if (_is_oauth_user && _is_feed_auth) {
+var _url = obj.getAttribute('ref');
+showWindow(obj.id, _url, 'get', 1);
+} else {
+if (_is_share_token_outofdate) {
+var _text = '为了您的账号安全，请使用QQ帐号重新登录，将为您升级帐号安全机制<br/><br/>点击<a href="http://www.discuz.net/connect.php?mod=login&op=init&referer=forum.php%3Fmod%3Dviewthread%26tid%3D3579915%26extra%3Dpage%253D1%26page%3D1"><img src="static/image/common/qq_login.gif" class="vm" alt="QQ登录" /></a>页面将发生跳转';
+var _button = '我知道了';
+showDialog(_text, 'notice', null, null, 0, null, null, _button);
+} else if (!_is_oauth_user) {
+var _text = '很抱歉，由于分享功能升级，您需要使用QQ帐号重新登录本站，即可马上体验全新的分享到QQ空间、腾讯微博和腾讯朋友功能。<br /><span style="font-size: 12px;">提示：点击<a href="member.php?mod=logging&amp;action=logout&amp;formhash=2737d5aa" class="xi2">这里退出</a>后，重新使用QQ账号登录。</span>';
+var _button = '我知道了';
+showDialog(_text, 'notice', null, 'connect_goto_setting()', 0, null, null, _button);
+} else if (!_is_feed_auth) {
+var _title = '授权提示';
+var _text = '独乐乐不如众乐乐，马上完善授权，您将可以把本站精彩内容分享到QQ空间、腾讯微博和腾讯朋友，跟大家分享每个精彩瞬间。';
+var _button = '修改授权';
+showDialog(_text, 'notice', _title, 'connect_goto_setting()', 0, null, null, _button);
+}
+}
+}
+function connect_goto_setting() {
+if (_is_oauth_user) {
+var _url = "http://www.discuz.net/home.php?mod=spacecp&ac=plugin&id=qqconnect:spacecp";
+hideMenu('fwin_dialog', 'dialog');
+var _newWindow = window.open(_url, 'newWindow');
+_newWindow.focus();
+} else {
+hideMenu('fwin_dialog', 'dialog');
+}
+}
+_attachEvent(window, 'load', function(){
+connect_share_init();
+});
+</script>
+	
+
+
+<a href="javascript:;" onclick="showWindow(&#39;wechat_share&#39;, &#39;plugin.php?id=wechat:qrcode&amp;threadqr=3579915&amp;access=yes&amp;share=yes&#39;)"><i><img src="./post-detail_files/share.png" alt="微信">微信</i></a>
+
+
+</div>
+
+<a href="http://www.discuz.net/home.php?mod=spacecp&ac=favorite&type=thread&id=3579915&formhash=2737d5aa" id="k_favorite" onclick="showWindow(this.id, this.href, &#39;get&#39;, 0);" onmouseover="this.title = $(&#39;favoritenumber&#39;).innerHTML + &#39; 人收藏&#39;" title="收藏本帖"><i><img src="./post-detail_files/fav.gif" alt="收藏">收藏<span id="favoritenumber">8</span></i></a>
+<a class="followp" href="http://www.discuz.net/home.php?mod=spacecp&ac=follow&op=relay&tid=3579915&from=forum" onclick="showWindow(&#39;relaythread&#39;, this.href, &#39;get&#39;, 0);" title="转播求扩散"><i><img src="./post-detail_files/rt.png" alt="转播">转播</i></a>
+<a class="sharep" href="http://www.discuz.net/home.php?mod=spacecp&ac=share&type=thread&id=3579915" onclick="showWindow(&#39;sharethread&#39;, this.href, &#39;get&#39;, 0);" title="分享推精华"><i><img src="./post-detail_files/oshr.png" alt="分享">分享<span id="sharenumber">2</span></i></a>
+<a href="http://www.discuz.net/forum.php?mod=collection&action=edit&op=addthread&tid=3579915" id="k_collect" onclick="showWindow(this.id, this.href);return false;" onmouseover="this.title = $(&#39;collectionnumber&#39;).innerHTML + &#39; 人淘帖&#39;" title="淘好帖进专辑"><i><img src="./post-detail_files/collection.png" alt="分享">淘帖<span id="collectionnumber">1</span></i></a>
+<a id="recommend_add" href="http://www.discuz.net/forum.php?mod=misc&action=recommend&do=add&tid=3579915&hash=2737d5aa" onclick="ajaxmenu(this, 3000, 1, 0, &#39;43&#39;, &#39;recommendupdate(1)&#39;);return false;" onmouseover="this.title = $(&#39;recommendv_add&#39;).innerHTML + &#39; 人顶&#39;" title="顶一下"><i><img src="./post-detail_files/rec_add.gif" alt="顶">顶<span id="recommendv_add">9</span></i></a>
+<a id="recommend_subtract" href="http://www.discuz.net/forum.php?mod=misc&action=recommend&do=subtract&tid=3579915&hash=2737d5aa" onclick="ajaxmenu(this, 3000, 1, 0, &#39;43&#39;, &#39;recommendupdate(-1)&#39;);return false;" onmouseover="this.title = $(&#39;recommendv_subtract&#39;).innerHTML + &#39; 人踩&#39;" title="踩一下"><i><img src="./post-detail_files/rec_subtract.gif" alt="踩">踩<span id="recommendv_subtract">1</span></i></a>
+</div>
+<div class="sign" style="max-height:120px;maxHeightIE:120px;">有关程序或者代码的问题，请直接在相关板块发帖提问，这样可以得到最快捷的解答。我一般2周才看一次PM的。</div>
+</td>
+</tr>
+<tr id="_postposition28022906"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<div class="pob cl">
+<em>
+</em>
+
+<p>
+<a href="javascript:;" id="mgc_post_28022906" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow(&#39;miscreport28022906&#39;, &#39;misc.php?mod=report&amp;rtype=post&amp;rid=28022906&amp;tid=3579915&amp;fid=10&#39;, &#39;get&#39;, -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_28022906_menu" class="p_pop mgcmn" style="display: none;">
+<li><a href="http://www.discuz.net/home.php?mod=magic&mid=stick&idtype=tid&id=3579915" id="a_stick" onclick="showWindow(this.id, this.href)"><img src="./post-detail_files/stick.small.gif">置顶卡</a></li>
+<li><a href="http://www.discuz.net/home.php?mod=magic&mid=open&idtype=tid&id=3579915" id="a_stick" onclick="showWindow(this.id, this.href)"><img src="./post-detail_files/open.small.gif">喧嚣卡</a></li>
+<li><a href="http://www.discuz.net/home.php?mod=magic&mid=highlight&idtype=tid&id=3579915" id="a_stick" onclick="showWindow(this.id, this.href)"><img src="./post-detail_files/highlight.small.gif">变色卡</a></li>
+<li><a href="http://www.discuz.net/home.php?mod=magic&mid=jack&idtype=tid&id=3579915" id="a_jack" onclick="showWindow(this.id, this.href)"><img src="./post-detail_files/jack.small.gif">千斤顶</a></li>
+<li><a href="http://www.discuz.net/home.php?mod=magic&mid=namepost&idtype=pid&id=28022906:3579915" id="a_namepost_28022906" onclick="showWindow(this.id, this.href)"><img src="./post-detail_files/namepost.small.gif">显身卡</a></li><li>
+</li></ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_28022906')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_28048246"><table id="pid28048246" class="plhin" summary="pid28048246" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="pls" rowspan="2">
+<div id="favatar28048246" class="pls favatar">
+ <div class="pi">
+<div class="authi"><a href="http://www.discuz.net/home.php?mod=space&uid=1173009" target="_blank" class="xw1">北北″</a><a href="http://www.discuz.net/home.php?mod=spacecp&ac=profile&op=verify&vid=1" target="_blank"><img src="./post-detail_files/common_1_verify_icon.png" class="vm" alt="问题互助团队" title="问题互助团队"></a>
+
+</div>
+</div>
+<div class="p_pop blk bui card_gender_1" id="userinfo28048246" style="display: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo28048246_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="http://www.discuz.net/home.php?mod=space&uid=1173009" target="_blank" class="xi2">北北″</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="http://www.discuz.net/home.php?mod=space&uid=1173009&do=profile" target="_blank" class="xi2">29440</a></dd>
+</dl><div class="imicn">
+<a href="http://wpa.qq.com/msgrd?V=3&Uin=9778566&Site=Discuz!%20%B9%D9%B7%BD%D5%BE&Menu=yes&from=discuz" target="_blank" title="QQ"><img src="./post-detail_files/qq.gif" alt="QQ"></a><a href="javascript:;" onclick="window.open(&#39;http://amos.im.alisoft.com/msg.aw?v=2&amp;uid=&#39;+encodeURIComponent(&#39;巅峰最寂寞_北北&#39;)+&#39;&amp;site=cntaobao&amp;s=2&amp;charset=utf-8&#39;)" title="阿里旺旺"><img src="./post-detail_files/taobao.gif" alt="阿里旺旺"></a><a href="http://www.dfbar.net/" target="_blank" title="查看个人网站"><img src="./post-detail_files/forumlink.gif" alt="查看个人网站"></a><a href="http://www.discuz.net/home.php?mod=space&uid=1173009&do=profile" target="_blank" title="查看详细资料"><img src="./post-detail_files/userinfo.gif" alt="查看详细资料"></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar" onmouseover="showauthor(this, &#39;userinfo28048246&#39;)"><a href="http://www.discuz.net/home.php?mod=space&uid=1173009" class="avtm" target="_blank"><img src="./post-detail_files/09_avatar_middle.jpg" onerror="this.onerror=null;this.src=&#39;http://uc.discuz.net/images/noavatar_middle.gif&#39;"></a></div>
+</div>
+<div class="tns xg2"><table cellspacing="0" cellpadding="0"><tbody><tr><th><p><a href="http://www.discuz.net/home.php?mod=space&uid=1173009&do=thread&type=thread&view=me&from=space" class="xi2">33</a></p>主题</th><th><p><a href="http://www.discuz.net/home.php?mod=space&uid=1173009&do=thread&type=reply&view=me&from=space" class="xi2">4165</a></p>帖子</th><td><p><a href="http://www.discuz.net/home.php?mod=space&uid=1173009&do=profile" class="xi2"><span title="29440">2万</span></a></p>积分</td></tr></tbody></table></div>
+
+<p><em><a href="http://www.discuz.net/home.php?mod=spacecp&ac=usergroup&gid=65" target="_blank">Genius</a></em></p>
+
+
+<p><span id="g_up28048246" onmouseover="showMenu({&#39;ctrlid&#39;:this.id, &#39;pos&#39;:&#39;12!&#39;});"><img src="./post-detail_files/star_level3.gif" alt="Rank: 12"><img src="./post-detail_files/star_level3.gif" alt="Rank: 12"><img src="./post-detail_files/star_level3.gif" alt="Rank: 12"></span></p>
+<div id="g_up28048246_menu" class="tip tip_4" style="display: none;"><div class="tip_horn"></div><div class="tip_c">Genius, 积分 29440, 距离下一级还需 20560 积分</div></div>
+
+
+<p><span class="pbg2" id="upgradeprogress_28048246" onmouseover="showMenu({&#39;ctrlid&#39;:this.id, &#39;pos&#39;:&#39;12!&#39;, &#39;menuid&#39;:&#39;g_up28048246_menu&#39;});"><span class="pbr2" style="width:48%;"></span></span></p>
+
+
+<dl class="pil cl">
+	<dt>积分</dt><dd><a href="http://www.discuz.net/home.php?mod=space&uid=1173009&do=profile" target="_blank" class="xi2">29440</a></dd>
+</dl>
+
+<dl class="pil cl"><a href="http://wpa.qq.com/msgrd?V=3&Uin=9778566&Site=Discuz!%20%B9%D9%B7%BD%D5%BE&Menu=yes&from=discuz" target="_blank" title="发起QQ聊天"><img src="./post-detail_files/qq_big.gif" alt="QQ" style="margin:0px;"></a></dl><ul class="xl xl2 o cl">
+<li class="addflw">
+<a href="http://www.discuz.net/home.php?mod=spacecp&ac=follow&op=add&hash=2737d5aa&fuid=1173009" id="followmod_1173009" title="收听TA" class="xi2" onclick="showWindow(&#39;followmod&#39;, this.href, &#39;get&#39;, 0);">收听TA</a>
+</li>
+<li class="pm2"><a href="http://www.discuz.net/home.php?mod=spacecp&ac=pm&op=showmsg&handlekey=showmsg_1173009&touid=1173009&pmid=0&daterange=2&pid=28048246&tid=3579915" onclick="showWindow(&#39;sendpm&#39;, this.href);" title="发消息" class="xi2">发消息</a></li>
+</ul>
+</div>
+</td>
+<td class="plc">
+<div class="pi">
+<strong>
+<a href="http://www.discuz.net/forum.php?mod=redirect&goto=findpost&ptid=3579915&pid=28048246" id="postnum28048246" onclick="setCopy(this.href, &#39;帖子地址复制成功&#39;);return false;">
+推荐
+</a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon28048246" src="./post-detail_files/online_member.gif">
+<em id="authorposton28048246">发表于 2014-7-8 14:16:20</em>
+<span class="pipe">|</span>
+<a href="http://www.discuz.net/forum.php?mod=viewthread&tid=3579915&page=1&authorid=1173009" rel="nofollow">只看该作者</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tbody><tr><td class="t_f" id="postmessage_28048246">
+<div class="a_pr" style="margin-left:10px;width:auto"><a href="http://www.verydz.com/cloud.php?fromdz" target="_blank"><img src="./post-detail_files/103831ppopjbwmjmi7ubrt.gif" border="0"></a></div>大家要及时修复下哦!</td></tr></tbody></table>
+
+
+</div>
+<div id="comment_28048246" class="cm">
+</div>
+
+<div id="post_rate_div_28048246"></div>
+</div>
+</div>
+
+</td></tr>
+<tr><td class="plc plm">
+</td>
+</tr>
+<tr id="_postposition28048246"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<div class="pob cl">
+<em>
+<a class="replyadd" href="http://www.discuz.net/forum.php?mod=misc&action=postreview&do=support&tid=3579915&pid=28048246&hash=2737d5aa" onclick="ajaxmenu(this, 3000, 1, 0, &#39;43&#39;, &#39;&#39;);return false;" onmouseover="this.title = ($(&#39;review_support_28048246&#39;).innerHTML ? $(&#39;review_support_28048246&#39;).innerHTML : 0) + &#39; 人 支持&#39;">支持 <span id="review_support_28048246">3</span></a>
+<a class="replysubtract" href="http://www.discuz.net/forum.php?mod=misc&action=postreview&do=against&tid=3579915&pid=28048246&hash=2737d5aa" onclick="ajaxmenu(this, 3000, 1, 0, &#39;43&#39;, &#39;&#39;);return false;" onmouseover="this.title = ($(&#39;review_against_28048246&#39;).innerHTML ? $(&#39;review_against_28048246&#39;).innerHTML : 0) + &#39; 人 反对&#39;" title="0 人 反对">反对 <span id="review_against_28048246">0</span></a>
+</em>
+
+<p>
+<a href="javascript:;" id="mgc_post_28048246" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow(&#39;miscreport28048246&#39;, &#39;misc.php?mod=report&amp;rtype=post&amp;rid=28048246&amp;tid=3579915&amp;fid=10&#39;, &#39;get&#39;, -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_28048246_menu" class="p_pop mgcmn" style="display: none;">
+<li><a href="http://www.discuz.net/home.php?mod=magic&mid=namepost&idtype=pid&id=28048246:3579915" id="a_namepost_28048246" onclick="showWindow(this.id, this.href)"><img src="./post-detail_files/namepost.small.gif">显身卡</a></li><li>
+</li></ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_28048246')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_28036129"><table id="pid28036129" class="plhin" summary="pid28036129" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="pls" rowspan="2">
+<div id="favatar28036129" class="pls favatar">
+ <a name="lastpost"></a><div class="pi">
+<div class="authi"><a href="http://www.discuz.net/home.php?mod=space&uid=1571450" target="_blank" class="xw1">1314学习网</a>
+</div>
+</div>
+<div class="p_pop blk bui card_gender_1" id="userinfo28036129" style="display: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo28036129_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="http://www.discuz.net/home.php?mod=space&uid=1571450" target="_blank" class="xi2">1314学习网</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="http://www.discuz.net/home.php?mod=space&uid=1571450&do=profile" target="_blank" class="xi2">21527</a></dd>
+</dl><div class="imicn">
+<a href="http://wpa.qq.com/msgrd?V=3&Uin=15326940&Site=Discuz!%20%B9%D9%B7%BD%D5%BE&Menu=yes&from=discuz" target="_blank" title="QQ"><img src="./post-detail_files/qq.gif" alt="QQ"></a><a href="http://www.discuz.1314study.com/" target="_blank" title="查看个人网站"><img src="./post-detail_files/forumlink.gif" alt="查看个人网站"></a><a href="http://www.discuz.net/home.php?mod=space&uid=1571450&do=profile" target="_blank" title="查看详细资料"><img src="./post-detail_files/userinfo.gif" alt="查看详细资料"></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar" onmouseover="showauthor(this, &#39;userinfo28036129&#39;)"><a href="http://www.discuz.net/home.php?mod=space&uid=1571450" class="avtm" target="_blank"><img src="./post-detail_files/noavatar_middle.gif" onerror="this.onerror=null;this.src=&#39;http://uc.discuz.net/images/noavatar_middle.gif&#39;"></a></div>
+</div>
+<div class="tns xg2"><table cellspacing="0" cellpadding="0"><tbody><tr><th><p><a href="http://www.discuz.net/home.php?mod=space&uid=1571450&do=thread&type=thread&view=me&from=space" class="xi2">192</a></p>主题</th><th><p><a href="http://www.discuz.net/home.php?mod=space&uid=1571450&do=thread&type=reply&view=me&from=space" class="xi2">9284</a></p>帖子</th><td><p><a href="http://www.discuz.net/home.php?mod=space&uid=1571450&do=profile" class="xi2"><span title="21527">2万</span></a></p>积分</td></tr></tbody></table></div>
+
+<p><em><a href="http://www.discuz.net/home.php?mod=spacecp&ac=usergroup&gid=65" target="_blank">Genius</a></em></p>
+
+
+<p><span id="g_up28036129" onmouseover="showMenu({&#39;ctrlid&#39;:this.id, &#39;pos&#39;:&#39;12!&#39;});"><img src="./post-detail_files/star_level3.gif" alt="Rank: 12"><img src="./post-detail_files/star_level3.gif" alt="Rank: 12"><img src="./post-detail_files/star_level3.gif" alt="Rank: 12"></span></p>
+
+
+
+<p><span class="pbg2" id="upgradeprogress_28036129" onmouseover="showMenu({&#39;ctrlid&#39;:this.id, &#39;pos&#39;:&#39;12!&#39;, &#39;menuid&#39;:&#39;g_up28036129_menu&#39;});"><span class="pbr2" style="width:28%;"></span></span></p>
+
+
+<dl class="pil cl">
+	<dt>积分</dt><dd><a href="http://www.discuz.net/home.php?mod=space&uid=1571450&do=profile" target="_blank" class="xi2">21527</a></dd>
+</dl>
+
+<dl class="pil cl"><a href="http://wpa.qq.com/msgrd?V=3&Uin=15326940&Site=Discuz!%20%B9%D9%B7%BD%D5%BE&Menu=yes&from=discuz" target="_blank" title="发起QQ聊天"><img src="./post-detail_files/qq_big.gif" alt="QQ" style="margin:0px;"></a></dl><ul class="xl xl2 o cl">
+<li class="addflw">
+<a href="http://www.discuz.net/home.php?mod=spacecp&ac=follow&op=add&hash=2737d5aa&fuid=1571450" id="followmod_1571450" title="收听TA" class="xi2" onclick="showWindow(&#39;followmod&#39;, this.href, &#39;get&#39;, 0);">收听TA</a>
+</li>
+<li class="pm2"><a href="http://www.discuz.net/home.php?mod=spacecp&ac=pm&op=showmsg&handlekey=showmsg_1571450&touid=1571450&pmid=0&daterange=2&pid=28036129&tid=3579915" onclick="showWindow(&#39;sendpm&#39;, this.href);" title="发消息" class="xi2">发消息</a></li>
+</ul>
+</div>
+</td>
+<td class="plc">
+<div class="pi">
+<strong>
+<a href="http://www.discuz.net/forum.php?mod=redirect&goto=findpost&ptid=3579915&pid=28036129" id="postnum28036129" onclick="setCopy(this.href, &#39;帖子地址复制成功&#39;);return false;">
+推荐
+</a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon28036129" src="./post-detail_files/online_member.gif">
+<em id="authorposton28036129">发表于 2014-7-5 17:21:48</em>
+<span class="pipe">|</span>
+<a href="http://www.discuz.net/forum.php?mod=viewthread&tid=3579915&page=1&authorid=1571450" rel="nofollow">只看该作者</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tbody><tr><td class="t_f" id="postmessage_28036129">
+<div class="a_pr" style="margin-left:10px;width:auto"><a href="http://www.verydz.com/cloud.php?fromdz1" target="_blank"><img src="./post-detail_files/103157yp40xr7oow9oyp2g.gif" border="0"></a></div>前来支持一下</td></tr></tbody></table>
+
+
+</div>
+<div id="comment_28036129" class="cm">
+</div>
+
+<div id="post_rate_div_28036129"></div>
+</div>
+</div>
+
+</td></tr>
+<tr><td class="plc plm">
+</td>
+</tr>
+<tr id="_postposition28036129"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<div class="pob cl">
+<em>
+<a class="replyadd" href="http://www.discuz.net/forum.php?mod=misc&action=postreview&do=support&tid=3579915&pid=28036129&hash=2737d5aa" onclick="ajaxmenu(this, 3000, 1, 0, &#39;43&#39;, &#39;&#39;);return false;" onmouseover="this.title = ($(&#39;review_support_28036129&#39;).innerHTML ? $(&#39;review_support_28036129&#39;).innerHTML : 0) + &#39; 人 支持&#39;">支持 <span id="review_support_28036129">3</span></a>
+<a class="replysubtract" href="http://www.discuz.net/forum.php?mod=misc&action=postreview&do=against&tid=3579915&pid=28036129&hash=2737d5aa" onclick="ajaxmenu(this, 3000, 1, 0, &#39;43&#39;, &#39;&#39;);return false;" onmouseover="this.title = ($(&#39;review_against_28036129&#39;).innerHTML ? $(&#39;review_against_28036129&#39;).innerHTML : 0) + &#39; 人 反对&#39;">反对 <span id="review_against_28036129">0</span></a>
+</em>
+
+<p>
+<a href="javascript:;" id="mgc_post_28036129" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow(&#39;miscreport28036129&#39;, &#39;misc.php?mod=report&amp;rtype=post&amp;rid=28036129&amp;tid=3579915&amp;fid=10&#39;, &#39;get&#39;, -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_28036129_menu" class="p_pop mgcmn" style="display: none;">
+<li><a href="http://www.discuz.net/home.php?mod=magic&mid=namepost&idtype=pid&id=28036129:3579915" id="a_namepost_28036129" onclick="showWindow(this.id, this.href)"><img src="./post-detail_files/namepost.small.gif">显身卡</a></li><li>
+</li></ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_28036129')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</tbody></table>
+</div><div id="postlistreply" class="pl"><div id="post_new" class="viewthread_table" style="display: none"></div></div>
+</div>
+
+
+<form method="post" autocomplete="off" name="modactions" id="modactions">
+<input type="hidden" name="formhash" value="2737d5aa">
+<input type="hidden" name="optgroup">
+<input type="hidden" name="operation">
+<input type="hidden" name="listextra" value="page%3D1">
+<input type="hidden" name="page" value="1">
+</form>
+
+
+
+<div class="pgs mtm mbm cl">
+<span class="pgb y"><a href="http://www.discuz.net/forum-10-1.html">返回列表</a></span>
+<a id="newspecialtmp" onmouseover="$(&#39;newspecial&#39;).id = &#39;newspecialtmp&#39;;this.id = &#39;newspecial&#39;;showMenu({&#39;ctrlid&#39;:this.id})" onclick="showWindow(&#39;newthread&#39;, &#39;forum.php?mod=post&amp;action=newthread&amp;fid=10&#39;)" href="javascript:;" title="发新帖"><img src="./post-detail_files/pn_post.png" alt="发新帖"></a>
+</div>
+
+<!--[diy=diyfastposttop]--><div id="diyfastposttop" class="area"></div><!--[/diy]-->
+<script type="text/javascript">
+var postminchars = parseInt('6');
+var postmaxchars = parseInt('50000');
+var disablepostctrl = parseInt('0');
+</script>
+
+<div id="f_pst" class="pl bm bmw">
+<form method="post" autocomplete="off" id="fastpostform" action="http://www.discuz.net/forum.php?mod=post&action=reply&fid=10&tid=3579915&extra=page%3D1&replysubmit=yes&infloat=yes&handlekey=fastpost" onsubmit="return fastpostvalidate(this)">
+<table cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="pls">
+<div class="avatar avtm"><img src="./post-detail_files/noavatar_middle.gif" onerror="this.onerror=null;this.src=&#39;http://uc.discuz.net/images/noavatar_middle.gif&#39;"></div></td>
+<td class="plc">
+
+<span id="fastpostreturn"></span>
+
+
+<div class="cl">
+<div id="fastsmiliesdiv" class="y"><div id="fastsmiliesdiv_data"><div id="fastsmilies"></div></div></div><div class="hasfsl" id="fastposteditor">
+<div class="tedt mtn">
+<div class="bar">
+<span class="y">
+<a href="http://www.discuz.net/forum.php?mod=post&action=reply&fid=10&tid=3579915" onclick="return switchAdvanceMode(this.href)">高级模式</a>
+</span><script src="./post-detail_files/seditor.js" type="text/javascript"></script>
+<div class="fpd">
+<a href="javascript:;" title="文字加粗" class="fbld">B</a>
+<a href="javascript:;" title="设置文字颜色" class="fclr" id="fastpostforecolor">Color</a>
+<a id="fastpostimg" href="javascript:;" title="图片" class="fmg">Image</a>
+<a id="fastposturl" href="javascript:;" title="添加链接" class="flnk">Link</a>
+<a id="fastpostquote" href="javascript:;" title="引用" class="fqt">Quote</a>
+<a id="fastpostcode" href="javascript:;" title="代码" class="fcd">Code</a>
+<a href="javascript:;" class="fsml" id="fastpostsml">Smilies</a>
+</div></div>
+<div class="area">
+<div class="pt hm">
+您现在无权发帖。<a href="javascript:;" onclick="$(&#39;fastpostform&#39;).submit()" class="xi2">点击查看原因</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="seccheck_fastpost">
+</div>
+
+
+<input type="hidden" name="formhash" value="2737d5aa">
+<input type="hidden" name="usesig" value="">
+<input type="hidden" name="subject" value="  ">
+<p class="ptm pnpost">
+<a href="http://www.discuz.net/home.php?mod=spacecp&ac=credit&op=rule&fid=10" class="y" target="_blank">本版积分规则</a>
+<button name="replysubmit" id="fastpostsubmit" class="pn pnc vm" value="replysubmit" tabindex="5"><strong>发表回复</strong></button>
+将此回复同步到
+
+<script type="text/javascript">
+//var _allow_qq = false;
+var _allow_t = true;
+//var _syn_qq = false;
+var _syn_t = true;
+var _is_oauth_user = true;
+var _is_feed_auth = true;
+var _is_token_outofdate = false;
+function connect_post_init() {
+//			if (_allow_qq && _syn_qq) {
+//				if (_is_feed_auth && !_is_token_outofdate) {
+//					$('connectPost_synQQ').className = 'syn_qq_check';
+//					$('connectPost_synQQ').title = '已设置同步至QQ空间';
+//					$('connect_publish_feed').value = 1;
+//				} else {
+//					$('connectPost_synQQ').className = 'syn_qq';
+//					$('connectPost_synQQ').title = '未设置同步至QQ空间';
+//					$('connect_publish_feed').value = 0;
+//				}
+//			}
+
+if (_allow_t && _syn_t) {
+if (_is_feed_auth && !_is_token_outofdate) {
+$('connectPost_synT').className = 'syn_tqq_check';
+$('connectPost_synT').title = '已设置同步至腾讯微博';
+$('connect_publish_t').value = 1;
+} else {
+$('connectPost_synT').className = 'syn_tqq';
+$('connectPost_synT').title = '未设置同步至腾讯微博';
+$('connect_publish_t').value = 0;
+}
+}
+
+//			if (_allow_qq) {
+//				$('connectPost_synQQ').onclick = function () {
+//					connect_syn_option_toggle(this);
+//				}
+//			}
+if (_allow_t) {
+$('connectPost_synT').onclick = function () {
+connect_syn_option_toggle(this);
+}
+}
+if (getcookie('connect_synpost_tip')) {
+connect_post_tip();
+}
+}
+function connect_syn_option_toggle(opt) {
+if (_is_feed_auth && !_is_token_outofdate) {
+if ($(opt.getAttribute('rel')).value == 1) {
+opt.className = opt.className.replace('_check', '');
+opt.title = opt.title.replace('已', '未');
+$(opt.getAttribute('rel')).value = 0;
+} else {
+$(opt.getAttribute('rel')).value = 1;
+opt.className += '_check';
+opt.title = opt.title.replace('未', '已');
+}
+} else {
+var _auth_text = '马上完善授权，您将可以发表主题时同步到QQ空间和腾讯微博，第一时间和大家分享您在论坛中的新鲜事儿。';
+if (_is_token_outofdate) {
+_auth_text = '为了您的账号安全，请使用QQ帐号重新登录，将为您升级帐号安全机制<br/><br/>点击<a href="http://www.discuz.net/connect.php?mod=login&op=init&referer=forum.php%3Fmod%3Dviewthread%26tid%3D3579915%26extra%3Dpage%253D1%26page%3D1"><img src="static/image/common/qq_login.gif" class="vm" alt="QQ登录" /></a>页面将发生跳转，请确保您已保存好帖子数据';
+var _button = '我知道了';
+showDialog(_auth_text, 'notice', null, null, 0, null, null, _button);
+return;
+} else if (!_is_oauth_user) {
+_auth_text = '马上绑定QQ账号，您将可以发表主题时同步到QQ空间和腾讯微博，第一时间和大家分享您在论坛中的新鲜事儿。';
+}
+showDialog(_auth_text, 'notice', '授权提示', 'connect_goto_setting()', 0, null, null, '修改授权');
+}
+}
+function connect_post_tip() {
+if ($('fastpostform')) {
+return;
+}
+if (_is_token_outofdate) {
+if ($('synnotice')) {
+$('synnotice').style.display = 'none';
+}
+return;
+}
+var r = document.getElementById('rstnotice');
+var c = document.createElement('div');
+c.setAttribute('id', 'synnotice');
+c.setAttribute('class', 'ntc_l bbs');
+if(BROWSER.ie) {
+c.id = 'synnotice';
+c.className = 'ntc_l bbs';
+}
+c.style.display = 'block';
+r.parentNode.insertBefore(c, r.nextSibling);
+c.innerHTML = '<a href="javascript:void(0);" title="关闭同步发帖提示" class="d y" onclick="connect_syn_tip_hide();">close</a>此主题将同步到腾讯微博，您的听众能够看到您发表的主题。&nbsp;&nbsp;<a class="xi2" href="javascript:void(0);" onclick="connect_syn_cancel();" title="取消发表主题时同步到腾讯微博，将来您可以到“设置-QQ绑定”页面重新设置。"><strong>暂不同步</strong></a>';
+}
+function connect_syn_tip_hide() {
+setcookie('connect_synpost_tip', '', '-1');
+$('synnotice').style.display = 'none';
+}
+function connect_syn_cancel() {
+ajaxget('http://www.discuz.net/connect.php?mod=config&op=synconfig', '');
+//			$('connectPost_synQQ').className = 'syn_qq';
+//			$('connectPost_synQQ').title = '未设置同步至QQ空间';
+//			$('connect_publish_feed').value = 0;
+$('connectPost_synT').className = 'syn_tqq';
+$('connectPost_synT').title = '未设置同步至腾讯微博';
+$('connect_publish_t').value = 0;
+$('synnotice').style.display = 'none';
+}
+function connect_goto_setting() {
+var _url = "http://www.discuz.net/home.php?mod=spacecp&ac=plugin&id=qqconnect:spacecp";
+hideMenu('fwin_dialog', 'dialog')
+var _newWindow = window.open(_url, 'newWindow');
+_newWindow.focus();
+}
+_attachEvent(window, 'load', function(){
+connect_post_init();
+});
+</script>
+
+<a title="已设置同步至腾讯微博" class="syn_tqq_check" href="javascript:void(0);" id="connectPost_synT" rel="connect_publish_t">腾讯微博</a>
+<input type="hidden" name="connect_publish_t" id="connect_publish_t" value="1">
+
+ | <label class="lb"><input type="checkbox" name="adddynamic" class="pc" value="1">回帖并转播</label>
+<label for="fastpostrefresh"><input id="fastpostrefresh" type="checkbox" class="pc">回帖后跳转到最后一页</label>
+<script type="text/javascript">if(getcookie('fastpostrefresh') == 1) {$('fastpostrefresh').checked=true;}</script>
+</p>
+</td>
+</tr>
+</tbody></table>
+</form>
+</div>
+
+<script type="text/javascript">
+var connect_qzone_share_url = 'http://www.discuz.net/home.php?mod=spacecp&ac=plugin&id=qqconnect:spacecp&pluginop=share&sh_type=1&thread_id=3579915';
+var connect_weibo_share_url = 'http://www.discuz.net/home.php?mod=spacecp&ac=plugin&id=qqconnect:spacecp&pluginop=share&sh_type=2&thread_id=3579915';
+var connect_thread_info = {
+thread_url: 'http://www.discuz.net/thread-3579915-1-1.html',
+thread_id: '3579915',
+post_id: '28022906',
+forum_id: '10',
+author_id: '859',
+author: 'Cnteacher'
+};
+
+connect_autoshare = '0';
+connect_isbind = '1';
+if(connect_autoshare == 1 && connect_isbind) {
+_attachEvent(window, 'load', function(){
+connect_share(connect_weibo_share_url, connect_openid);
+});
+}
+</script>
+
+<div id="connect_share_unbind" style="display: none;">
+<div class="c hm">
+<div style="font-size:14px; margin:10px 0;">绑定QQ帐号，轻松分享到QQ空间与腾讯微博</div>
+<div><a href="http://www.discuz.net/connect.php?mod=config&connect_autoshare=1" target="_blank"><img src="./post-detail_files/qq_bind.gif" align="absmiddle" style="margin-top:5px;"></a></div>
+</div>
+<input type="hidden" id="connect_thread_title" name="connect_thread_title" value="Discuz! 7.x 高危安全漏洞，请及时修复【20140702】">
+</div>
+
+
+<script type="text/javascript">
+new lazyload();
+</script>
+<script type="text/javascript">document.onkeyup = function(e){keyPageScroll(e, 0, 0, 'forum.php?mod=viewthread&tid=3579915', 1);}</script>
+</div>
+
+<div class="wp mtn">
+<!--[diy=diy3]--><div id="diy3" class="area"></div><!--[/diy]-->
+</div>
+
+<script type="text/javascript">
+function succeedhandle_followmod(url, msg, values) {
+var fObj = $('followmod_'+values['fuid']);
+if(values['type'] == 'add') {
+fObj.innerHTML = '不收听';
+fObj.href = 'home.php?mod=spacecp&ac=follow&op=del&fuid='+values['fuid'];
+} else if(values['type'] == 'del') {
+fObj.innerHTML = '收听TA';
+fObj.href = 'home.php?mod=spacecp&ac=follow&op=add&hash=2737d5aa&fuid='+values['fuid'];
+}
+}
+fixed_avatar([28022906,28048246,28036129], 1);
+</script>	</div>
+
+
+<script src="./post-detail_files/qshare.js" type="text/javascript"></script><script type="text/javascript">_share_tencent_weibo(null, $C("t_f", null, "td"), "", "b00fc655b3804133963cf0cbc346b8d7", "Discuz! 官方站");</script>
+
+
+
+<script type="text/javascript">
+var rel_tid = "3579915";
+var rel_title = "Discuz%21+7.x+%B8%DF%CE%A3%B0%B2%C8%AB%C2%A9%B6%B4%A3%AC%C7%EB%BC%B0%CA%B1%D0%DE%B8%B4%A1%BE20140702%A1%BF";
+var rel_reltid = "0";
+var rel_prepos = "";
+var my_siteid = "1000";
+var rel_uid = "2318607";
+var rel_views = "92976";
+var rel_replies = "2";
+var rel_page = "1";
+var rel_show = "0";
+</script>
+<script src="./post-detail_files/relate_subject.js" type="text/javascript" charset="GBK"></script>
+
+
+
+<script type="text/javascript">
+_attachEvent(window, 'load', getForbiddenFormula, document);
+function getForbiddenFormula() {
+var toGetForbiddenFormulaFIds = function () {
+ajaxget('plugin.php?id=cloudsearch&formhash=2737d5aa');
+};
+var a = document.body.getElementsByTagName('a');
+for(var i = 0;i < a.length;i++){
+if(a[i].getAttribute('sc')) {
+a[i].setAttribute('mid', hash(a[i].href));
+a[i].onmousedown = function() {toGetForbiddenFormulaFIds();};
+}
+}
+var btn = document.body.getElementsByTagName('button');
+for(var i = 0;i < btn.length;i++){
+if(btn[i].getAttribute('sc')) {
+btn[i].setAttribute('mid', hash(btn[i].id));
+btn[i].onmousedown = function() {toGetForbiddenFormulaFIds();};
+}
+}
+}
+</script>
+
+
+
+<div id="wechat_float_qrcode" class="p_pop xg1" style="text-align: center; float: left; position: fixed; top: 220px; z-index: 100; margin-left: 2px; width: 110px; left: 1191px; right: auto;">
+<p class="cl"><img class="y" style="cursor:pointer" onclick="display(&#39;wechat_float_qrcode&#39;);setcookie(&#39;wechatfqrc&#39;, 1, 86400)" src="./post-detail_files/ad_close.gif"></p>
+<img src="http://www.discuz.net/plugin.php?id=wechat:qrcode&tid=3579915&qrsize=2&access=yes" width="98">
+<p>用微信扫一扫<br>互动赢积分</p>
+</div>
+<script>
+function wechat_qrcode(type) {
+if(type && $('wechat_float_qrcode').style.display == 'none') {
+return;
+}
+var qrleft = parseInt($('ft').clientWidth + parseInt(fetchOffset($('ft'))['left']));
+$('wechat_float_qrcode').style.display = '';
+if(qrleft + $('wechat_float_qrcode').clientWidth > document.documentElement.clientWidth) {
+$('wechat_float_qrcode').style.cssFloat = 'right';
+$('wechat_float_qrcode').style.left = 'auto';
+$('wechat_float_qrcode').style.right = 0;
+} else {
+$('wechat_float_qrcode').style.cssFloat = 'left';
+$('wechat_float_qrcode').style.left = (qrleft) + 'px';
+$('wechat_float_qrcode').style.right = 'auto';
+}
+}
+_attachEvent(window, 'scroll', function () { wechat_qrcode(1); })
+_attachEvent(window, 'load', function() { wechat_qrcode(0); }, document);
+</script>
+
+<div id="ft" class="wp cl">
+<div id="flk" class="y">
+<p>
+<a href="javascript:;" onclick="showWindow(&#39;miscreport&#39;, &#39;misc.php?mod=report&amp;url=&#39;+REPORTURL);return false;">举报</a><span class="pipe">|</span><a href="http://www.discuz.net/forum.php?mod=misc&action=showdarkroom">小黑屋</a><span class="pipe">|</span><a href="http://www.discuz.net/forum.php?mobile=yes">手机版</a><span class="pipe">|</span><a href="http://www.discuz.net/archiver/">Archiver</a><span class="pipe">|</span><strong><a href="http://www.comsenz.com/" target="_blank">Comsenz</a></strong>
+( <a href="http://www.miitbeian.gov.cn/" target="_blank">京ICP证110024号|京网文[2011]0019-007号|北京公安备案:1101082242</a> )&nbsp;<a href="http://discuz.qq.com/service/security" target="_blank" title="防水墙保卫网站远离侵害"><img src="./post-detail_files/security.png"></a>&nbsp;&nbsp;<a href="http://stats.discuz.qq.com/?ADTAG=FROUM.FOOTER.CLICK.ICON" title="腾讯分析" target="_blank"><img title="腾讯分析" src="./post-detail_files/toss_12.gif" border="0"></a><script type="text/javascript" src="./post-detail_files/ping.js" charset="utf-8"></script><script type="text/javascript" reload="1">pgvMain({"discuzParams":{"r2":"1000","ui":"2318607","ty":2,"rt":"forum","md":"viewthread","fi":"10","ti":"3579915","pn":1,"qq":"011","logo":12},"extraParams":""});</script></p>
+<p class="xs0">
+GMT+8, 2014-12-3 22:45<span id="debuginfo">
+, Processed in 0.174700 second(s), 22 queries
+, Gzip On, Memcache On.
+</span>
+</p>
+</div>
+<div id="frt">
+<p>Powered by <strong><a href="http://www.discuz.net/" target="_blank">Discuz!</a></strong> <em>X3.2</em></p>
+<p class="xs0">&#169; 2001-2013 <a href="http://www.comsenz.com/" target="_blank">Comsenz Inc.</a></p>
+</div></div>
+<div id="scrolltop" style="left: 1191px; visibility: visible;">
+<span><a href="http://www.discuz.net/forum.php?mod=post&action=reply&fid=10&tid=3579915&extra=page%3D1&page=1" onclick="showWindow(&#39;reply&#39;, this.href)" class="replyfast" title="快速回复"><b>快速回复</b></a></span>
+<span hidefocus="true"><a title="返回顶部" onclick="window.scrollTo(&#39;0&#39;,&#39;0&#39;)" class="scrolltopa"><b>返回顶部</b></a></span>
+<span>
+<a href="http://www.discuz.net/forum-10-1.html" hidefocus="true" class="returnlist" title="返回列表"><b>返回列表</b></a>
+</span>
+</div>
+<script type="text/javascript">_attachEvent(window, 'scroll', function () { showTopLink(); });checkBlind();</script>
+			<div id="discuz_tips" style="display:none;"></div>
+			<script type="text/javascript">
+				var tipsinfo = '1000|X3.2|0.6||0|5087519D32F8921B7FE37CDEDFD63582|2318607|17|1417617952|38b0ea2d2753f2ad723acacaf114d98e|2';
+			</script>
+			<script src="./post-detail_files/discuz_tips.js" type="text/javascript" charset="UTF-8"></script>
+
+</em></body></html>
